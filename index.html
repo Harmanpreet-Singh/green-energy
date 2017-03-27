@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Masthead Slide-show and Content Manipulation</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper clearfix">
+
+        <div class="nav-bar">
+            <ul>
+                <li><i class="fa fa-home" aria-hidden="true"></i> Home</li>
+                <li><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</li>
+                <li><i class="fa fa-info" aria-hidden="true"></i> Blog</li>
+            </ul>
+        </div>
+
+        <div class="masthead">
+            <div class="banner">
+                <div class="box">
+                    <div class="mh-image"></div>
+                    <!-- 
+                    NOTE:
+                    Slides switch every 6 seconds. 
+                    Every slide is exposed for 5 seconds.
+                    The difference of 1 second is planned for 
+                    CSS transition fade-in/out, so make sure
+                    your div with class "mh-image" has set
+                    transition for opacity (with duration 
+                    of 1 second and type of easing "ease-out") 
+                    in stylesheet.
+                    -->
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="box">
+                <h1>Affordable Solutions:</h1>
+                <ul>
+                    <li><span class="btn" id="active">1</i></span></li>
+                    <li><span class="btn">2</i></span></li>
+                    <li><span class="btn">3</i></span></li>
+                </ul>
+                <div class="container"></div>
+            </div>
+        </div>
+
+        <hr />
+
+        <footer>
+            <p>Harmanpreet Singh &copy; 2017</p>
+            <ul>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</li>
+                <li><i class="fa fa-google-plus" aria-hidden="true"></i> Google</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

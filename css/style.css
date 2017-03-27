@@ -1,0 +1,246 @@
+/*
+
+Analogous Color Scheme:
+
+https://color.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=2&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.9057846095981904,0.5523823272699833,1,0.7131734268660048,0.5026679178156848,0.91,0.6994263345460165,0.6023823272699833,1,0.5026679178156848,0.5139338733906184,0.91,0.5523823272699833,0.6825566226338973,1&swatchOrder=0,1,2,3,4
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Slabo+27px');
+
+
+body {	
+    font-family: 'Quicksand', sans-serif;
+    margin:0;
+    padding:0;
+    /*font-size:  1.618rem;
+    line-height: 1.618;*/
+    font-size:  1.418rem;
+    line-height: 1.418rem;
+	background-color: black;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Slabo 27px', serif;    
+    text-transform: uppercase;
+}
+
+/*button {
+    width: 100%;
+    background-color: #8DAEFF;
+    border: none;
+    padding: 1rem;
+    border-radius: 7px;
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}*/
+
+.nav-bar {
+    display: inline-block;
+    /*width: 100%;*/
+    /*padding: 1rem;*/
+}
+
+.nav-bar ul li {
+    float: left;
+    margin-right: 2.5rem;
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+    /*background-color: lightgray;*/
+    /*border-radius: 7px;*/
+    border-bottom: 2px solid black;
+    /*padding: 2%;*/
+}
+
+.nav-bar ul li:last-child {
+    /*margin-right: 0 !important;*/
+}
+
+.masthead {
+   /*clear: both;*/
+   /*background-image: URL('../img/marble-art-1187846-639x504.jpg');*/
+   /*padding: 2%;*/
+   color: white;
+   text-transform: capitalize; 
+   text-shadow: 2px 2px 4px #000000;
+}
+
+.fa-github {
+    font-size: 250%;
+}
+
+/*.masthead p {    font-size: 110%; }*/
+
+
+/*.main-content h1 {}*/
+
+.main-content ul {
+    display: inline-block;
+}
+
+.main-content ul li{
+    float: left;
+    margin-right: 1rem;
+}
+.container {
+    clear: both;
+}
+.container img {
+    width: 30%;
+}
+.container p {
+    float: right;
+    width: 69%;
+    margin-left: 1%;
+}
+
+.wrapper {
+    background-color: white;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.mh-image {
+    width: 100%;
+    /*text-align: center;*/
+    transition: opacity 1s ease-out;
+}
+
+.mh-image img {
+    width: 30%;
+    /*height: auto;*/
+}
+
+#active {
+    /*background-color: gray;
+    border-radius: 50%;
+    padding: 1rem;*/
+    color: #B680E8;
+    font-weight: bolder;
+        border-bottom: 3px solid #B680E8;
+    /*border: 1px solid black;*/
+    /*border-radius: 50%;*/
+}
+
+.wrapper {
+    padding: 2rem;
+}
+
+img, footer {
+    border-radius: 10px;
+}
+
+p, .masthead {
+    padding-bottom: 2rem;
+}
+h1 {
+    padding-bottom: 1rem;
+}
+ul {
+    padding-bottom: 3rem;
+}
+
+footer {
+    background-color: #B680E8;
+    clear: both;
+    padding: 2rem;
+}
+
+footer ul {
+    display: inline-block;
+}
+
+footer ul li {
+    float: left;
+    margin-right: 1rem;
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*.main-content ul {
+    padding: 0;
+}
+
+.main-content ul li {
+    background-color: #B680E8;
+    list-style-type: none;
+    padding: 0.5rem;
+    margin: 0;
+    margin-top: 0.1rem;
+    border-radius: 7px;
+    text-align: left;
+    text-transform: capitalize;
+}*/
+
+hr {
+    border: 1px dashed black;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.spanClass {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Add this class to any HTML element that needs clearing float */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/*Mobile View < 35rem*/
+@media screen and (max-width: 35rem){
+
+
+body {	
+    text-align: center;
+    font-size:  0.618rem;
+    line-height: 0.618rem;
+}
+
+.mh-image img {
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+}
+.container p {
+    width: 100%;
+}
+
+}
+
+/* --  TABLET VIEWPORT-- */
+@media screen and (min-width: 35rem) and (max-width: 60rem){
+
+body {	
+    text-align: center;
+    font-size:  1rem;
+    line-height: 1rem;
+}
+.mh-image img {
+    width: 100%;
+}
+.container img {
+    width: 50%;
+}
+.container p {
+    width: 49%;
+}
+
+}
+
+
+/* -- DESKTOP VIEWPORT-- */
+@media screen and (min-width: 80rem) {
+
+}
